@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 for %%* in (.) do set "foldername=%%~n*"
 
-set "exclude_items=pack.bat;.gitattributes;.gitignore;.luarc.json"
+set "exclude_items=pack.bat;.git;.gitattributes;.gitignore;.luarc.json"
 
 set "zipfile=%foldername%.zip"
 
