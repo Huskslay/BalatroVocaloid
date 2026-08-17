@@ -46,4 +46,3 @@ if exist "%filelist%" del "%filelist%"
 
 echo.
 echo Completed: %zipfile%
-pause
