@@ -12,7 +12,10 @@ function Recurse_text_to_joker(table, conversions)
 end
 
 if CFG.change_text then
+
    G.localization.descriptions.Joker.j_hanging_chad.name = "Hanging"
+   G.localization.descriptions.Joker.j_wee.name = "Wee Little Joker"
+
    Recurse_text_to_joker(
       G.localization,
       {
