@@ -2,7 +2,7 @@
 local atlas_path_joker = 'jokers.png'
 
 
-if CFG.ChangeJokerAtlas then
+if CFG.change_joker_atlas then
    SMODS.Atlas{
       key = 'Joker',
       px = 71,

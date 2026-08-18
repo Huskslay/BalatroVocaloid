@@ -52,7 +52,7 @@ for i, suit in ipairs(deck_suits) do
       pos_style = "deck",
       colour = deck_suit_colors_lc[i],
    }
-   if CFG.ChangeTextColours then
+   if CFG.change_text_colours then
       palette_lc.colour = deck_suit_colors_lc[i]
    end
    table.insert(palettes, palette_lc)
@@ -65,7 +65,7 @@ for i, suit in ipairs(deck_suits) do
       atlas = mod_atlas_key .. '_hc',
       pos_style = "deck",
    }
-   if CFG.ChangeTextColours then
+   if CFG.change_text_colours then
       palette_hc.colour = deck_suit_colors_hc[i]
    end
    table.insert(palettes, palette_hc)

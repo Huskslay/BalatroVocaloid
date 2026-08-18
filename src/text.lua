@@ -11,7 +11,7 @@ function Recurse_text_to_joker(table, conversions)
    end
 end
 
-if CFG.ChangeText then
+if CFG.change_text then
    G.localization.descriptions.Joker.j_hanging_chad.name = "Hanging"
    Recurse_text_to_joker(
       G.localization,

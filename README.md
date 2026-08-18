@@ -11,17 +11,17 @@ config.lua can be changed to decide what the mod applies, such as not changing t
 ```lua
  -- Whether to try change the word Joker to Miku in the games text.
  -- Default: true
- ["ChangeText"] = true,
+ ["change_text"] = true,
 
  -- Whether to change the Joker atlas.
  -- Default: true
- ["ChangeJokerAtlas"] = true,
+ ["change_joker_atlas"] = true,
 
  -- Whether to change the Icon atlas.
  -- Default: true
- ["ChangeIcons"] = true,
+ ["change_icons"] = true,
 
  -- Whether to change the text colours used for the cards.
  -- Default: true
- ["ChangeTextColours"] = true,
+ ["change_text_colours"] = true,
 ```
