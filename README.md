@@ -6,7 +6,7 @@ Currently unfinished but works
 
 ## Config
 
-config.lua can be changed to decide what the mod applies, such as not changing the joker appearances
+Config can be changed from in game config menu (restart is required for them to take effect)
 
 ```lua
  -- Whether to try change the word Joker to Miku in the games text.
