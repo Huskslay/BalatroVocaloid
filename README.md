@@ -1,6 +1,6 @@
 # Balatro Vocaloid
 
-Adds a Vocaloid themed deck and changes the jokers and icons to be Vocaloid themed
+Adds a Vocaloid themed deck and changes the jokers and icons to be Vocaloid themed, as well as many relevant/inside jokes
 
 Currently unfinished but works
 
