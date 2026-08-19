@@ -1,9 +1,9 @@
 {
    "id": "BalatroVocaloidCards",
    "name": "Balatro: Vocaloid Cards",
-   "author": ["Huskslay", "Eli"],
+   "author": ["Huskslay", "StripperEli"],
    "description": "Deck with the best in the world.",
    "prefix": "vocaloidCards",
    "main_file": "core/main.lua",
-   "version": "1.3.4"
+   "version": "1.4.0"
 }
