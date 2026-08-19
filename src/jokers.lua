@@ -2,7 +2,7 @@
 local atlas_path_joker = 'jokers.png'
 
 
-if CFG.change_joker_atlas then
+if MOD.config.change_joker_atlas then
    SMODS.Atlas{
       key = 'Joker',
       px = 71,

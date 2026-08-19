@@ -24,7 +24,7 @@ local atlas_path_icons_lc = 'ui_assets_lc.png'
 local atlas_path_icons_hc = 'ui_assets_hc.png'
 
 
-if CFG.change_icons then
+if MOD.config.change_icons then
    SMODS.Atlas{
       key = 'ui_1',
       px = 18,

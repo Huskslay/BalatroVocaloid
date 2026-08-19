@@ -11,7 +11,7 @@ function Recurse_text_to_joker(table, conversions)
    end
 end
 
-if CFG.change_text then
+if MOD.config.change_text then
 
    G.localization.descriptions.Joker.j_hanging_chad.name = "Hanging"
    G.localization.descriptions.Joker.j_wee.name = "Wee Little Joker"
