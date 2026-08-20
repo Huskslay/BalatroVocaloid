@@ -5,5 +5,5 @@
    "description": "Deck with the best in the world.",
    "prefix": "vocaloidCards",
    "main_file": "core/main.lua",
-   "version": "1.4.0"
+   "version": "1.4.1"
 }
