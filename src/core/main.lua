@@ -9,11 +9,16 @@ BV = {
 
 
 -----------------------------------------------------------
--- Load other src --
+-- Load other --
 -----------------------------------------------------------
 
-
-local src = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. "src")
-for _, file in ipairs(src) do
-   assert(SMODS.load_file("src/" .. file))()
+local function load_lua(folder)
+   local files = SMODS.NFS.getDirectoryItems(SMODS.current_mod.path .. folder)
+   for _, file in ipairs(files) do
+      assert(SMODS.load_file(folder .. "/" .. file))()
+   end
 end
+
+load_lua("src/info")
+load_lua("src/main")
+load_lua("src/ui")

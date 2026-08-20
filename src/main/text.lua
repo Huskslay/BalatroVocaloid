@@ -11,17 +11,18 @@ local function recurse_text_to_joker(table, conversions)
    end
 end
 
+
 if BV.MOD.config.change_text then
 
-   G.localization.descriptions.Joker.j_hanging_chad.name = "Hanging"
-   G.localization.descriptions.Joker.j_wee.name = "Wee Little Joker"
+   for k, v in pairs(BV.Jokers.list) do
+      if v.text then
+         for k2, v2 in pairs(v.text) do
+            G.localization.descriptions.Joker[k][k2] = v2
+         end
+      end
+   end
 
    recurse_text_to_joker(
-      G.localization,
-      {
-         joker="miku",
-         Joker="Miku",
-         JOKER="MIKU"
-      }
+      G.localization, BV.Jokers.replace_text
    )
 end
