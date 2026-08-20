@@ -1,2 +1,6 @@
 .luarc.json
 BalatroVocaloid.zip
+
+**/__pycache__
+creation/animated_card_maker/src/border_frames/
+creation/animated_card_maker/src/frames/
