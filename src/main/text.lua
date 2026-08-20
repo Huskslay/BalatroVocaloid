@@ -1,16 +1,26 @@
 
-local function recurse_text_to_joker(table, conversions)
+-----------------------------------------------------------
+-- Helpful functions --
+-----------------------------------------------------------
+
+-- Recursively changes text in a table
+local function recurse_text_in_table(table, conversions)
    for i, v in pairs(table) do
       if type(v) == "string" then
          for i2, v2 in pairs(conversions) do
             table[i] = table[i]:gsub(i2, v2)
          end
       elseif type(v) == "table" then
-         recurse_text_to_joker(v, conversions)
+         recurse_text_in_table(v, conversions)
       end
    end
 end
 
+
+
+-----------------------------------------------------------
+-- Change ingame text--
+-----------------------------------------------------------
 
 if BV.MOD.config.change_text then
 
@@ -22,7 +32,8 @@ if BV.MOD.config.change_text then
       end
    end
 
-   recurse_text_to_joker(
-      G.localization, BV.Jokers.replace_text
+   recurse_text_in_table(
+      G.localization,
+      BV.Jokers.replace_text
    )
 end

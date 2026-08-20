@@ -10,5 +10,20 @@ match_indent = true
 position = 'after'
 pattern = '''function Card:update(dt)'''
 payload = '''
-   BV.Jokers.update(self)
+    BV.Jokers.update(self)
+
+'''
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+match_indent = true
+position = 'after'
+pattern = '''if getmetatable(self) == Card then 
+        table.insert(G.I.CARD, self)
+    end
+'''
+payload = '''
+
+BV.Jokers.init(self)
 '''

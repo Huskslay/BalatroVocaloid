@@ -1,17 +1,14 @@
 
-local mod_atlas_key = 'huskslay.decks_'
-
-
 for k, v in pairs(BV.Decks) do
 
-   local key = mod_atlas_key .. k
+   local key = BV.keys.decks .. k
 
    -----------------------------------------------------------
-   -- Atlases --
+   -- Register hight and low contracst atlases --
    -----------------------------------------------------------
 
+   -- Low-contrast palette
    if v.lc then
-      -- Low-contrast palette
       SMODS.Atlas{
          key = key .. '_lc',
          px = 71,
@@ -21,8 +18,8 @@ for k, v in pairs(BV.Decks) do
       }
    end
 
+   -- High-contrast palette
    if v.hc then
-      -- High-contrast palette
       SMODS.Atlas{
          key = key .. '_hc',
          px = 71,

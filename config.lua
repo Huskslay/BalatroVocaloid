@@ -11,6 +11,10 @@ return {
    -- Default: true
    ["gif_jokers"] = true,
 
+   -- Whether some jokers should play sounds.
+   -- Default: true
+   ["joker_sounds"] = true,
+
    -- Whether to change the Icon atlas.
    -- Default: true
    ["change_icons"] = true,
@@ -18,4 +22,8 @@ return {
    -- Whether to change the text colours used for the cards.
    -- Default: true
    ["change_text_colours"] = true,
+
+   -- Whether the mod errors if not directly in Baltro `Mod` folder to ensure lovely works.
+   -- Default: true
+   ["direct_folder_required"] = true,
 }

@@ -19,6 +19,10 @@ Config can be changed from in game config menu (restart is required for most of 
 -- Default: true
 ["gif_jokers"] = true,
 
+-- Whether some jokers should play sounds.
+-- Default: true
+["joker_sounds"] = true,
+
 -- Whether to change the Icon atlas.
 -- Default: true
 ["change_icons"] = true,

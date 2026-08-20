@@ -5,6 +5,7 @@ BV.Jokers = {
 }
 
 
+
 -----------------------------------------------------------
 -- Global text change --
 -----------------------------------------------------------
@@ -14,6 +15,7 @@ BV.Jokers.replace_text = {
    Joker="Miku",
    JOKER="MIKU"
 }
+
 
 
 -----------------------------------------------------------
@@ -33,14 +35,22 @@ BV.Jokers.list = {
       },
       text = {
          name = "Reserved Truck"
+      },
+      sounds = {
+         show = {
+            path = 'beer.wav',
+            volue = 0.75
+         }
       }
    },
+
 
    j_hanging_chad = {
       text = {
          name = "Hanging"
       }
    },
+
 
    j_wee = {
       text = {
