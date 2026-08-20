@@ -1,22 +1,24 @@
 @echo off
 setlocal enabledelayedexpansion
 
-echo Checking argument
+echo Checking arguments
 if "%~1"=="" (
-   echo No argument provided
+   echo No version argument provided
    exit /b 1
 )
 set "version=%~1"
+if "%~2"=="" (
+   echo No exclusion argument provided
+   exit /b 1
+)
+set "exclude_items=%~2"
 
 :: Get current folder name
 for %%* in (.) do set "foldername=%%~n*"
 
-:: Define excluded items
-set "exclude_items=pack.bat;.git;.gitattributes;.gitignore;creation;.luarc.json"
-
 :: Define names for temporary file list and target folder
 set "filelist=temp_filelist.txt"
-set "targetfolder=%foldername%_put_folder_inside_into_mods_not_this"
+set "targetfolder=%foldername%"
 set "zipfile=%foldername%-v%version%.zip"
 
 :: Clean up previous
