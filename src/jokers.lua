@@ -63,9 +63,11 @@ end
 
 ---@param card Card
 BV.Jokers.update = function(card)
-   if card.ability and card.ability.set == "Joker" then
-      if card.ability.name == "Reserved Parking" then
-         setGIF(card, BV.Jokers.ReservedParkingInfo)
+   if BV.MOD.config.gif_jokers then
+      if card.ability and card.ability.set == "Joker" then
+         if card.ability.name == "Reserved Parking" then
+            setGIF(card, BV.Jokers.ReservedParkingInfo)
+         end
       end
    end
 end

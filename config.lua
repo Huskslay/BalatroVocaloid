@@ -7,6 +7,10 @@ return {
    -- Default: true
    ["change_joker_atlas"] = true,
 
+   -- Whether to have some jokers as GIFs.
+   -- Default: true
+   ["gif_jokers"] = true,
+
    -- Whether to change the Icon atlas.
    -- Default: true
    ["change_icons"] = true,

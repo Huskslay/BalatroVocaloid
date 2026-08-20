@@ -16,7 +16,7 @@ local config_nodes = {
       nodes = {
          {
             n = G.UIT.T,
-            config = { text = "*A restart is required to take effect*", align = "tm", padding = 0.05, scale = 0.25 }
+            config = { text = "*Most require a restart to take effect*", align = "tm", padding = 0.05, scale = 0.25 }
          }
       }
    },
