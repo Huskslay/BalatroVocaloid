@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 local longest = 1
-for key, _ in pairs(MOD.config) do
+for key, _ in pairs(BV.MOD.config) do
    if #key > longest then
       longest = #key
    end
@@ -39,10 +39,10 @@ local config_nodes = {
 
 G.FUNCS.balatrovocaloid_toggle_config_button = function(e)
    local key = e.config.data_key
-   if key and MOD.config[key] ~= nil then
-      MOD.config[key] = not MOD.config[key]
-      e.config.text_node.config.text = key .. ": " .. tostring(MOD.config[key])
-      local _, _ = pcall(SMODS.save_mod_config, MOD)
+   if key and BV.MOD.config[key] ~= nil then
+      BV.MOD.config[key] = not BV.MOD.config[key]
+      e.config.text_node.config.text = key .. ": " .. tostring(BV.MOD.config[key])
+      local _, _ = pcall(SMODS.save_mod_config, BV.MOD)
       e.UIBox:recalculate()
    end
 end
@@ -52,7 +52,7 @@ end
 -- Create buttons --
 -----------------------------------------------------------
 
-for key, value in pairs(MOD.config) do
+for key, value in pairs(BV.MOD.config) do
    local text_node = {
       n = G.UIT.T,
       config = { text = key .. ": " .. tostring(value), align = "tm", padding = 0.5, scale = 0.5, color = G.C.UI.OUTLINE_LIGHT }
