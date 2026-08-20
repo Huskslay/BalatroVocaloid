@@ -11,7 +11,7 @@ set "version=%~1"
 :: Get current folder name
 for %%* in (.) do set "foldername=%%~n*"
 
-:: Define excluded items (files and folders)
+:: Define excluded items
 set "exclude_items=pack.bat;.git;.gitattributes;.gitignore;creation;.luarc.json"
 
 :: Define names for temporary file list and target folder
@@ -19,7 +19,7 @@ set "filelist=temp_filelist.txt"
 set "targetfolder=%foldername%_put_folder_inside_into_mods_not_this"
 set "zipfile=%foldername%-v%version%.zip"
 
-:: Clean up previous runs
+:: Clean up previous
 if exist "%filelist%" del "%filelist%"
 if exist "%zipfile%" del "%zipfile%"
 if exist "%targetfolder%" rd /s /q "%targetfolder%"
@@ -67,5 +67,5 @@ echo.
 echo Completed: %zipfile%
 echo.
 
-:: Optional: Uncomment the following line to delete the copied folder after zipping
+:: Delete folder
 rd /s /q "%targetfolder%"
